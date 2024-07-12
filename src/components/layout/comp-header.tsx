@@ -2,9 +2,9 @@
 
 export default function CompnentsHeader() {
   return (
-    <div className="pb-10 h-fit  overflow-hidden dark:bg-black">
+    <div className="pb-10 h-fit  !overflow-hidden dark:bg-black">
       <main>
-        <div className="relative isolate">
+        <div className="relative overflow-hidden isolate">
           <svg
             className="absolute hidden  dark:block inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
             aria-hidden="true"

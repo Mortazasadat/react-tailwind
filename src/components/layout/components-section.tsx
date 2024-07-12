@@ -279,7 +279,7 @@ export function ComponentsSection() {
   const BLUR_FADE_DELAY = 0.04;
   return (
     <section
-      className="z-10 dark:bg-black relative px-4  py-20  "
+      className="z-10 dark:bg-black overflow-hidden relative px-4  py-20  "
       id="explore-blocks"
     >
       <svg

@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function MianHeader() {
   return (
-    <div className="bg-white  dark:bg-black">
+    <div className="bg-white overflow-hidden  dark:bg-black">
       <div className="relative h-screen overflow-hidden isolate px-6 pt-14 lg:px-8">
         <svg
           className="absolute hidden  dark:block inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
