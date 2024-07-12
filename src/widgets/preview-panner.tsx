@@ -18,22 +18,23 @@ import {
 } from "@material-tailwind/react";
 import { FaDesktop, FaTabletScreenButton, FaExpand } from "react-icons/fa6";
 import { FaMobileAlt, FaRegCopy } from "react-icons/fa";
+import { LuExpand } from "react-icons/lu";
 import {
   ChevronDownIcon,
   EyeIcon,
   CodeBracketIcon,
   CheckIcon,
 } from "@heroicons/react/24/outline";
+import Iframe from "./layout/ifram";
 
 import Editor from "react-simple-code-editor";
-import { highlight, languages } from "prismjs/components/prism-core";
-import {} from "react-copy-to-clipboard";
+import { languages, highlight } from "prismjs/components/prism-core";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 import "prismjs/components/prism-clike";
 import "prismjs/components/prism-javascript";
 import "prismjs/components/prism-typescript";
 import "prismjs/components/prism-markup";
-import Iframe from "./layout/ifram";
 require("prismjs/components/prism-jsx");
 require("prismjs/components/prism-tsx");
 

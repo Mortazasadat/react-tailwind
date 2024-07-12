@@ -342,7 +342,7 @@ export function ComponentsSection() {
 
               <div className="grid grid-cols-1  col-span-3 gap-10 sm:grid-cols-2 lg:grid-cols-3 ">
                 {blocks.map(({ count, title, route, img, isNew }, i) => (
-                  <Link href={route}>
+                  <Link key={i} href={route}>
                     <BorderGlowCard>
                       <div className="col-span-1 mb-8 lg:mb-0 ">
                         <Link href="#" className="list-none  ">
