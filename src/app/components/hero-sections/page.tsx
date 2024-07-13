@@ -3,7 +3,7 @@ import PreviewPanel from "@/widgets/preview-panner";
 
 export default function Account() {
   return (
-    <div className=" mx-auto mt-32 space-y-10 max-w-7xl">
+    <div className=" mx-auto mt-32 space-y-14 max-w-7xl">
       <BackButton />
       <PreviewPanel
         frame={1}

@@ -5,7 +5,7 @@ import { MobileNavbar } from "./mobile-nav";
 import Link from "next/link";
 const navigation = [
   { name: "Components", href: "/components" },
-  { name: "Templates", href: "#" },
+  { name: "Templates", href: "/templates" },
 ];
 export default function Navbar() {
   return (

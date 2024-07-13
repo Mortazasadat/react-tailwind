@@ -168,7 +168,7 @@ export function PreviewPanel({
       </div>
       <Card className="border-2 shadow-none rounded-xl border-blue-gray-100">
         <div className="relative grid p-4 bg-transparent border-b rounded-t-xl border-blue-gray-50">
-          <div className="absolute flex">
+          <div className="absolute flex left-4 top-3">
             <Tooltip content="Desktop View">
               <IconButton variant="text" onClick={() => setDevice("desktop")}>
                 <FaDesktop strokeWidth={1.5} className="w-6 h-6" />
@@ -226,7 +226,7 @@ export function PreviewPanel({
                   variant="text"
                   className="flex items-center gap-2 px-3.5"
                 >
-                  {version === "react-ts" ? "react ts" : version}
+                  {version === "react-ts" ? "react" : version}
                   <ChevronDownIcon
                     strokeWidth={4}
                     className={`h-2.5 w-2.5 transition-transform ${
@@ -251,7 +251,7 @@ export function PreviewPanel({
                 >
                   HTML
                 </MenuItem>
-                <MenuItem
+                {/* <MenuItem
                   onClick={async () => {
                     if (version !== "react") {
                       const path = src
@@ -266,7 +266,7 @@ export function PreviewPanel({
                   }}
                 >
                   React
-                </MenuItem>
+                </MenuItem> */}
                 <MenuItem
                   onClick={async () => {
                     if (version !== "react-ts") {
@@ -279,7 +279,7 @@ export function PreviewPanel({
                     }
                   }}
                 >
-                  React TypeScript
+                  React
                 </MenuItem>
               </MenuList>
             </Menu>
