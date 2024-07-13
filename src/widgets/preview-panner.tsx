@@ -87,6 +87,7 @@ export function PreviewPanel({
 
     const response = await fetcher(`/api/read`, { filePath });
 
+    console.log("res :", response);
     if (response) {
       setData(response.content);
       setIsLoading(false);
