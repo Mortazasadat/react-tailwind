@@ -20,15 +20,20 @@ import { FaDesktop, FaTabletScreenButton, FaExpand } from "react-icons/fa6";
 import { FaMobileAlt, FaRegCopy } from "react-icons/fa";
 import { LuExpand } from "react-icons/lu";
 import {
+  ComputerDesktopIcon,
+  DeviceTabletIcon,
+  DevicePhoneMobileIcon,
+  ArrowsPointingOutIcon,
   ChevronDownIcon,
   EyeIcon,
   CodeBracketIcon,
+  Square2StackIcon,
   CheckIcon,
 } from "@heroicons/react/24/outline";
 import Iframe from "./layout/ifram";
 
 import Editor from "react-simple-code-editor";
-import { languages, highlight } from "prismjs/components/prism-core";
+import { highlight, languages } from "prismjs/components/prism-core";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
 import "prismjs/components/prism-clike";
@@ -87,7 +92,6 @@ export function PreviewPanel({
 
     const response = await fetcher(`/api/read`, { filePath });
 
-    console.log("res :", response);
     if (response) {
       setData(response.content);
       setIsLoading(false);
@@ -164,7 +168,7 @@ export function PreviewPanel({
       </div>
       <Card className="border-2 shadow-none rounded-xl border-blue-gray-100">
         <div className="relative grid p-4 bg-transparent border-b rounded-t-xl border-blue-gray-50">
-          <div className="absolute items-center hidden mx-auto space-x-2 left-4 top-2/4 -translate-y-2/4 md:flex lg:left-36 lg:-translate-x-2/4">
+          <div className="absolute flex">
             <Tooltip content="Desktop View">
               <IconButton variant="text" onClick={() => setDevice("desktop")}>
                 <FaDesktop strokeWidth={1.5} className="w-6 h-6" />

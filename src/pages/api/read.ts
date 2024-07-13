@@ -10,7 +10,7 @@ export default async function handler(
 
   // Define GitHub repository details
   const owner = "Mortazasadat"; // Replace with the repo owner's username
-  const repo = "murtaza";
+  const repo = "react-tailwind";
   const auth_code = process.env.NEXT_PUBLIC_GITHUB_API_KEY;
 
   const url = `https://api.github.com/repos/${owner}/${repo}/contents/${filePath}`;
