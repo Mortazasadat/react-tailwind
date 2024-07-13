@@ -1,13 +1,18 @@
+"use client";
 import { BsYoutube } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
 import ToggleTheme from "../ThemeChanger";
 import { MobileNavbar } from "./mobile-nav";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useState } from "react";
 const navigation = [
   { name: "Components", href: "/components" },
   { name: "Templates", href: "/templates" },
 ];
 export default function Navbar() {
+  const pathname = usePathname();
+
   return (
     <nav className="absolute mx-auto max-w-[1380px] inset-x-0 top-0 z-50">
       <div
@@ -27,7 +32,9 @@ export default function Navbar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-sm dark:text-white font-semibold leading-6 text-gray-900"
+                className={`text-sm  dark:text-white font-semibold leading-6 ${
+                  item.href === pathname ? "text-blue-600" : "text-gray-900"
+                }`}
               >
                 {item.name}
               </Link>
@@ -35,8 +42,15 @@ export default function Navbar() {
           </div>
         </div>
         <div className="hidden lg:flex lg:flex-1 items-center gap-x-5 lg:justify-end">
-          <BsYoutube className="w-5 h-5 mt-0.5 text-red-500" />
-          <FaGithub className="w-5 h-5" />
+          <Link href="https://www.youtube.com/@reactailwind" target="_blank">
+            <BsYoutube className="w-5 h-5 mt-0.5 transition-all duration-200 hover:scale-110 text-red-500" />
+          </Link>
+          <Link
+            target="_blank"
+            href="https://github.com/Mortazasadat/react-tailwind"
+          >
+            <FaGithub className="w-5 transition-all duration-200 hover:scale-110 h-5" />
+          </Link>
           <ToggleTheme className="" />
         </div>
       </div>

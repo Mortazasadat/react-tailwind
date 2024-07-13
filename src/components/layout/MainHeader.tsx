@@ -93,16 +93,20 @@ export default function MianHeader() {
               Free to use UI components for creative developers.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a
-                href="#"
+              <Link
+                href="/components"
                 className="rounded-md dark:text-white bg-blue-600 px-3.5 py-2.5 text-sm font-semibold transition-colors duration-300 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
               >
                 Get started
-              </a>
-              <button className="flex items-center dark:text-black gap-1 rounded-md bg-white ring-1  dark:ring-0 dark:py-2 ring-gray-200 px-3.5 py-2 hover:ring-gray-300 transition-all duration-300 ring-inset ">
+              </Link>
+              <Link
+                href="https://github.com/Mortazasadat/react-tailwind"
+                target="_blank"
+                className="flex items-center dark:text-black gap-1 rounded-md bg-white ring-1  dark:ring-0 dark:py-2 ring-gray-200 px-3.5 py-2 hover:ring-gray-300 transition-all duration-300 ring-inset "
+              >
                 <FaGithub className="w-5 h-5" />
                 Star on Github
-              </button>
+              </Link>
             </div>
           </div>
         </div>
