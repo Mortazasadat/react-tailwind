@@ -78,21 +78,21 @@ const DATA = [
       {
         count: 3,
         title: "Hero Sections",
-        route: "/blocks/hero-sections",
+        route: "/components/hero-sections",
         img: "/blocks/heroe1s.jpg",
         isNew: false,
       },
       {
         count: 2,
         title: "Feature Sections",
-        route: "/blocks/feature-sections",
+        route: "/components/feature-sections",
         img: "/blocks/feature.jpg",
         isNew: false,
       },
       {
         count: 2,
         title: "CTA Sections",
-        route: "/blocks/cta-sections",
+        route: "/components/cta-sections",
         img: "/blocks/cta-sections.jpg",
         isNew: true,
       },
@@ -279,7 +279,7 @@ export function ComponentsSection() {
   const BLUR_FADE_DELAY = 0.04;
   return (
     <section
-      className="z-10 dark:bg-black overflow-hidden relative px-4  py-20  "
+      className="z-10 dark:bg-black overflow-hidden relative px-4 -mt-10 "
       id="explore-blocks"
     >
       <svg
@@ -323,7 +323,7 @@ export function ComponentsSection() {
           }}
         />
       </div>
-      <div className="container -mt-40 px-2 mx-auto my-5 ">
+      <div className="container  px-2 mx-auto  ">
         <div className="">
           {DATA.map(({ title, blocks, description, id }, i) => (
             <div
@@ -342,10 +342,11 @@ export function ComponentsSection() {
 
               <div className="grid grid-cols-1  col-span-3 gap-10 sm:grid-cols-2 lg:grid-cols-3 ">
                 {blocks.map(({ count, title, route, img, isNew }, i) => (
-                  <Link key={i} href={route}>
+                  <Link key={i} href={route} className="relative">
+                    <span className="inset-0 absolute" />
                     <BorderGlowCard>
                       <div className="col-span-1 mb-8 lg:mb-0 ">
-                        <Link href="#" className="list-none  ">
+                        <Link href={route} className="list-none  ">
                           <div className=" relative ">
                             <div className="relative aspect-[5/3] overflow-hidden rounded-lg  ring-1 ring-cerise-red-900/10 dark:ring-1 dark:ring-white ">
                               <img

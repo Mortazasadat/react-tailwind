@@ -85,7 +85,7 @@ export function PreviewPanel({
   const getCode = async (filePath: string) => {
     setIsLoading(true);
 
-    const response = await fetcher(`/api/read`, { filePath });
+    const response = await fetcher(`/api/read-local-file`, { filePath });
 
     if (response) {
       setData(response.content);

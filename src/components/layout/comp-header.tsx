@@ -2,7 +2,7 @@
 
 export default function CompnentsHeader() {
   return (
-    <div className="pb-10 h-fit  !overflow-hidden dark:bg-black">
+    <div className=" h-fit !overflow-hidden dark:bg-black">
       <main>
         <div className="relative overflow-hidden isolate">
           <svg
@@ -85,7 +85,7 @@ export default function CompnentsHeader() {
               }}
             />
           </div>
-          <div className="overflow-hidden">
+          <div className="overflow-hidden ">
             <div className="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-1 lg:pt-24">
               <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">

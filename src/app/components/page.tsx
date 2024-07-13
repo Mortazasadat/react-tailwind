@@ -8,12 +8,9 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <main className="relative h-full ">
+    <main>
       <CompnentsHeader />
-
-      <div className="relative   z-50 ">
-        <ComponentsSection />
-      </div>
+      <ComponentsSection />
     </main>
   );
 }
