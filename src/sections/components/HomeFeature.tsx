@@ -3,7 +3,7 @@ import React from "react";
 
 export default function HomeFeature() {
   return (
-    <div className="h-full min-h-screen mx-auto max-w-7xl bg-blue-50">
+    <div className="h-full w-full ">
       <ImageSection />
     </div>
   );

@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-full">
+    <div className="h-full w-full">
       <MianHeader />
       <HomeFeature />
     </div>

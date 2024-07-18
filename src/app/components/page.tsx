@@ -4,7 +4,7 @@ import ComponentsSection from "@/sections/components/components-section";
 
 export default function Page() {
   return (
-    <main>
+    <main className="">
       <CompnentsHeader />
       <ComponentsSection />
     </main>
