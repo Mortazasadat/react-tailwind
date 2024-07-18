@@ -1,6 +1,6 @@
 "use client";
 import { Typography, Chip } from "@material-tailwind/react";
-import BorderGlowCard from "../card";
+import BorderGlowCard from "@/components/BorderGlowCard";
 import Link from "next/link";
 
 const DATA = [
