@@ -123,7 +123,7 @@ const DATA = [
   // },
 ];
 
-const ImageSection = () => {
+const HomeFeatureComponent = () => {
   const [activeImage, setActiveImage] = useState(1);
 
   const ImageTabs = [
@@ -167,13 +167,54 @@ const ImageSection = () => {
   };
 
   return (
-    <div className="bg-white dark:bg-black py-16">
-      <div className="mx-auto  max-w-2xl  sm:text-center">
-        <p className="mt-2 text-3xl font-semibold tracking-tight text-gray-800 sm:text-4xl">
-          See React Tailwind components
-        </p>
+    <div className=" md:-mt-60  dark:bg-black overflow-hidden isolate relative h-full px-5 pb-40">
+      <svg
+        className="absolute hidden  dark:block inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+        aria-hidden="true"
+      >
+        <defs>
+          <pattern
+            id="983e3e4c-de6d-4c3f-8d64-b9761d1534cc"
+            width={200}
+            height={200}
+            x="50%"
+            y={-1}
+            patternUnits="userSpaceOnUse"
+          >
+            <path d="M.5 200V.5H200" fill="none" />
+          </pattern>
+        </defs>
+        <svg x="50%" y={-1} className="overflow-visible fill-gray-800/20">
+          <path
+            d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
+            strokeWidth={0}
+          />
+        </svg>
+        <rect
+          width="100%"
+          height="100%"
+          strokeWidth={0}
+          fill="url(#983e3e4c-de6d-4c3f-8d64-b9761d1534cc)"
+        />
+      </svg>
+
+      <div
+        aria-hidden="true"
+        className="absolute  inset-x-0 top-40 -z-10 transform-gpu overflow-hidden filter blur-3xl sm:top-48 "
+      >
+        <div
+          style={{
+            clipPath: " polygon(0 40%, 22% 10%, 100% 64%, 96% 100%)",
+          }}
+          className="relative dark:hidden left-[calc(50%-11rem)] aspect-[1155/778] w-[36.125rem] -translate-x-1/2 rotate-[-25deg] bg-gradient-to-tr from-blue-500 to-blue-100 opacity-10 sm:left-[58%] sm:w-[100.1875rem]"
+        />
       </div>
-      <div className="image-navigation mb-20  mt-20 flex w-full items-center justify-center text-center">
+      {/* <div className="mx-auto  max-w-3xl  sm:text-center">
+        <p className="mt-2 dark:text-white text-3xl font-semibold tracking-tight text-black sm:text-5xl">
+          React Tailwind components
+        </p>
+      </div> */}
+      <div className="image-navigation mb-14  mt-20 flex w-full items-center justify-center text-center">
         <div className=" flex w-full max-w-6xl flex-col gap-2 md:flex-row">
           {ImageTabs.map((tab, index) => (
             <button
@@ -185,20 +226,20 @@ const ImageSection = () => {
                 className={`mb-3 ${
                   activeImage === index + 1
                     ? `bg-[#0384c6] text-[#f0f9ff]`
-                    : `bg-[#30baf7] text-[#f0f9ff]`
-                } z-10 rounded-lg p-1 group-hover:bg-[#0384c6] group-hover:text-[#e0f2fe] `}
+                    : `bg-[#30baf7]  text-[#f0f9ff]`
+                } z-10 rounded-lg p-1 group-hover:bg-[#0384c6]  group-hover:text-[#e0f2fe] `}
               >
                 {tab.icon}
               </div>
               <div className="z-10 mb-2 text-xs font-semibold">{tab.name}</div>
-              <p className="z-10 m-0 text-xs text-gray-600 md:text-sm">
+              <p className="z-10 m-0 dark:text-gray-400 text-xs text-gray-600 md:text-sm">
                 {tab.description}
               </p>
               {activeImage === index + 1 && (
                 <motion.span
                   layoutId="tab"
                   transition={{ type: "spring", duration: 0.2, stiffness: 170 }}
-                  className="absolute inset-0 z-0 rounded-md bg-[#e0f2fe] "
+                  className="absolute inset-0 z-0 rounded-md dark:bg-gray-900 bg-[#e0f2fe] "
                 ></motion.span>
               )}
             </button>
@@ -265,4 +306,4 @@ const ImageSection = () => {
   );
 };
 
-export default ImageSection;
+export default HomeFeatureComponent;

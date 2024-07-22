@@ -3,11 +3,12 @@
 import { FaGithub } from "react-icons/fa";
 
 import Link from "next/link";
+import Image from "next/image";
 
 export default function MianHeader() {
   return (
-    <div className="bg-white overflow-hidden  dark:bg-black">
-      <div className="relative h-screen overflow-hidden isolate px-6 pt-14 lg:px-8">
+    <div className=" overflow-hidden  dark:bg-black">
+      <div className="relative h-full  md:min-h-screen overflow-hidden isolate px-6 ">
         <svg
           className="absolute hidden  dark:block inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
           aria-hidden="true"
@@ -57,7 +58,7 @@ export default function MianHeader() {
             style={{
               clipPath: " polygon(0 25%, 22% 10%, 100% 84%, 96% 100%)",
             }}
-            className="relative dark:hidden left-[calc(50%-11rem)] aspect-[1155/778] w-[36.125rem] -translate-x-1/2 rotate-[15deg] bg-gradient-to-tr from-light-blue-200 to-light-blue-200 opacity-30 sm:left-[calc(50%-25rem)] sm:w-[80.1875rem]"
+            className="relative dark:hidden left-[calc(50%-11rem)] aspect-[1155/778] w-[36.125rem] -translate-x-1/2 rotate-[15deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-10 sm:left-[calc(50%-25rem)] sm:w-[80.1875rem]"
           />
         </div>
         <div
@@ -68,10 +69,10 @@ export default function MianHeader() {
             style={{
               clipPath: " polygon(0 40%, 22% 10%, 100% 64%, 96% 100%)",
             }}
-            className="relative dark:hidden left-[calc(50%-11rem)] aspect-[1155/778] w-[36.125rem] -translate-x-1/2 rotate-[24deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-10 sm:left-[calc(50%-25rem)] sm:w-[80.1875rem]"
+            className="relative dark:hidden left-[calc(50%-11rem)] aspect-[1155/778] w-[36.125rem] -translate-x-1/2 rotate-[24deg]  bg-gradient-to-tr from-light-blue-200 to-light-blue-200 opacity-20 sm:left-[calc(50%-25rem)] sm:w-[80.1875rem]"
           />
         </div>
-        <div className="mx-auto max-w-2xl  py-32 sm:py-48 lg:py-52 ">
+        <div className="mx-auto max-w-2xl  py-32 md:py-36 lg:py-36 ">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <Link
               href="#"
@@ -81,11 +82,20 @@ export default function MianHeader() {
               Introducing React Tailwind
             </Link>
           </div>
+          <div className="flex flex-col mb-10 items-center">
+            <Image
+              width={80}
+              height={80}
+              src="/react-tailwind.png"
+              alt="logo"
+              className="object-cover object-center"
+            />
+          </div>
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight   dark:text-white text-gray-900 sm:text-6xl  ">
+            <h1 className="text-4xl font-bold tracking-tight   dark:text-white text-gray-900 md:text-6xl  ">
               Build faster.
             </h1>
-            <h1 className="text-4xl font-bold tracking-tight   dark:text-white text-gray-900 sm:text-6xl  ">
+            <h1 className="text-4xl font-bold tracking-tight   dark:text-white text-gray-900 md:text-6xl  ">
               Speed development.
             </h1>
 
@@ -95,7 +105,7 @@ export default function MianHeader() {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
                 href="/components"
-                className="rounded-md dark:text-white bg-blue-600 px-3.5 py-2.5 text-sm font-semibold transition-colors duration-300 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                className="rounded-md dark:text-white bg-[#30baf7] px-3.5 py-2.5 text-sm font-semibold transition-colors duration-300 text-white shadow-sm hover:bg-[#0fa5e8] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#30baf7]"
               >
                 Get started
               </Link>
@@ -110,7 +120,7 @@ export default function MianHeader() {
             </div>
           </div>
         </div>
-        <div
+        {/* <div
           aria-hidden="true"
           className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
         >
@@ -121,7 +131,7 @@ export default function MianHeader() {
             }}
             className="relative dark:hidden left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );

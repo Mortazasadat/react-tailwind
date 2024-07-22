@@ -1,13 +1,12 @@
-import Navbar from "@/components/layout/navbar";
-import HomeFeature from "@/sections/components/HomeFeature";
+import HomeFeatureComponent from "@/components/FeatureComponet";
+
 import MianHeader from "@/sections/home/MainHeader";
-import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="h-full w-full">
       <MianHeader />
-      <HomeFeature />
+      <HomeFeatureComponent />
     </div>
   );
 }
