@@ -8,7 +8,7 @@ export default function Account() {
       <PreviewPanel
         frame={1}
         height="h-[65vh]"
-        src="/components/react/hero-sections/hero-section-1"
+        src="/components/react/hero-sections/hero-simple-centered"
         title="Hero - Simple Center Block"
         description="The example below showcases an hero section "
         isNew
@@ -16,8 +16,16 @@ export default function Account() {
       <PreviewPanel
         frame={1}
         height="h-[65vh]"
-        src="/components/react/hero-sections/hero-section-1"
-        title="Hero - Simple Center Block"
+        src="/components/react/hero-sections/hero-splite-with-image"
+        title="Hero - Split With Image Block"
+        description="The example below showcases an hero section "
+        isNew
+      />
+      <PreviewPanel
+        frame={1}
+        height="h-[65vh]"
+        src="/components/react/hero-sections/hero-with-angled-image-block"
+        title="Hero - With Angled Image Block"
         description="The example below showcases an hero section "
         isNew
       />

@@ -1,4 +1,4 @@
-export default function HeroSimpleCenter() {
+export default function HeroSimpleCentered() {
   return (
     <div className="bg-white">
       <div className="relative px-6 isolate pt-14 lg:px-8">
