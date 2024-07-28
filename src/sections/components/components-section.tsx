@@ -83,7 +83,7 @@ const DATA = [
         isNew: false,
       },
       {
-        count: 2,
+        count: 3,
         title: "Feature Sections",
         route: "/components/feature-sections",
         img: "/blocks/feature.jpg",
