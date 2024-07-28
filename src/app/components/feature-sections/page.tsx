@@ -4,7 +4,9 @@ import PreviewPanel from "@/widgets/preview-panner";
 export default function Account() {
   return (
     <div className=" mx-auto mt-32 space-y-14 max-w-7xl">
-      <BackButton />
+      <div>
+        <BackButton />
+      </div>
       <PreviewPanel
         frame={1}
         height="h-[65vh]"
@@ -12,6 +14,8 @@ export default function Account() {
         title="Feature - Feature With Large Image"
         description="The example below showcases a feature section "
         isNew
+        video
+        videoLink="https://youtube.com/@reactailwind"
       />
       <PreviewPanel
         frame={1}
