@@ -214,8 +214,8 @@ const HomeFeatureComponent = () => {
           React Tailwind components
         </p>
       </div> */}
-      <div className="image-navigation mb-14  mt-20 flex w-full items-center justify-center text-center">
-        <div className=" flex w-full max-w-6xl flex-col gap-2 md:flex-row">
+      <div className="image-navigation max-w-7xl mx-auto mb-12  mt-20 flex w-full items-center justify-start text-center">
+        <div className=" flex w-full  flex-col gap-2 md:flex-row">
           {ImageTabs.map((tab, index) => (
             <button
               key={index}
@@ -246,19 +246,22 @@ const HomeFeatureComponent = () => {
           ))}
         </div>
       </div>
-      <div className="max-w-6xl mx-auto rounded-lg ">
+      <div className="max-w-7xl mx-auto rounded-lg ">
         {DATA.map((data, index) => (
           <div key={index} className="  ">
             {activeImage === data.Number && (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+              <div
+                className={`grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4`}
+              >
                 {data.blocks.map((block, i) => (
-                  <Link key={i} href={block.route} className="relative">
+                  <Link
+                    key={i}
+                    href={block.route}
+                    className="relative ring-1  rounded-2xl ring-inset ring-[#30baf7] hover:ring-2 transition-all duration-300"
+                  >
                     <span className="inset-0 absolute" />
-                    <ShineBorder
-                      className="border dark:border-none"
-                      color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
-                    >
-                      <div className="col-span-1 p-2 mb-8 lg:mb-0 ">
+                    <div className="p-5">
+                      <div className="col-span-1  mb-8 lg:mb-0 ">
                         <Link href={block.route} className="list-none">
                           <div className=" relative ">
                             <div className="relative aspect-[5/3] overflow-hidden rounded-lg  dark:ring-1 dark:ring-white">
@@ -294,7 +297,7 @@ const HomeFeatureComponent = () => {
                           </div>
                         </Link>
                       </div>
-                    </ShineBorder>
+                    </div>
                   </Link>
                 ))}
               </div>
