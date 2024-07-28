@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProviderNextTheme } from "@/utils/ThemeProvider";
 import { ThemeProvider } from "./theme-provider";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { siteConfig } from "@/utils/site";
 const inter = Inter({
   subsets: ["latin"],
@@ -92,6 +93,7 @@ export default function RootLayout({
         >
           <ThemeProvider>{children}</ThemeProvider>
         </ThemeProviderNextTheme>
+        <SpeedInsights />
         <Analytics />
       </body>
     </html>
