@@ -99,22 +99,22 @@ const DATA = [
       {
         count: 2,
         title: "Pricing Sections",
-        route: "/blocks/pricing-sections",
+        route: "/components/pricing-sections",
         img: "/blocks/pricing.jpg",
         isNew: false,
       },
       {
         count: 1,
         title: "Header Sections",
-        route: "/blocks/header-sections",
+        route: "/components/header-sections",
         img: "/blocks/heroe1s.jpg",
         isNew: true,
       },
       {
         count: 1,
         title: "Newsletter Sections",
-        route: "/blocks/newsletter-sections",
-        img: "/blocks/pricing.jpg",
+        route: "/components/newsletter-sections",
+        img: "/components/pricing.jpg",
         isNew: true,
       },
       {
