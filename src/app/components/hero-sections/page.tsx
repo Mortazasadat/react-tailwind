@@ -29,6 +29,16 @@ export default function Account() {
         description="The example below showcases an hero section "
         isNew
       />
+      <PreviewPanel
+        frame={1}
+        height="h-[65vh]"
+        src="/components/react/hero-sections/hero-with-multi-image"
+        title="Hero - Hero With Multi Images"
+        description="The example below showcases an hero section "
+        isNew
+        video
+        videoLink="https://youtu.be/K7ad5KZ0QJ8"
+      />
     </div>
   );
 }
