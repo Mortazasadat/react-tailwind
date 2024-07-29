@@ -20,7 +20,7 @@
 //   "border-spin": "border-spin 9s linear infinite",
 // },
 
-function Page() {
+function BorderBeam() {
   return (
     <div className="flex flex-col items-center justify-center w-full h-screen bg-white ">
       <div className="relative wrapper border-2 border-gray-300 rounded-2xl w-60 h-60 before:absolute  before:w-[150%] before:h-[150%] before:content-[''] before:animate-border-spin before:left-[-25%] before:top-[-25%] overflow-hidden ">
@@ -32,4 +32,4 @@ function Page() {
   );
 }
 
-export default Page;
+export default BorderBeam;

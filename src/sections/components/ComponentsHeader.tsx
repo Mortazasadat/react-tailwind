@@ -92,54 +92,69 @@ export default function CompnentsHeader() {
                   <h1 className="text-4xl dark:text-white font-bold tracking-tight text-gray-900 sm:text-6xl">
                     Beautifull Blocks made with TailwindCSS
                   </h1>
-                  <p className="relative mt-6 text-lg dark:text-white leading-8 text-gray-600 sm:max-w-sm lg:max-w-none">
+                  <p className="relative mt-6 text-lg dark:text-white leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
                     Beautifull, fully responsive components, drop to your
                     project and speed the developement.
                   </p>
                 </div>
                 <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
-                  <div className="ml-auto w-60 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
+                  <div className="ml-auto w-60  flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
+                    <div className="relative space-y-4">
+                      <div className="relative wrapper border-2 dark:border-black border-gray-50 rounded-2xl w-60 h-60 before:absolute  before:w-[150%] before:h-[150%] before:content-[''] before:animate-border-spin before:left-[-25%] before:top-[-25%] overflow-hidden ">
+                        <div className="flex items-center justify-center h-[calc(100%-2px)]  w-[calc(100%-2px)] absolute dark:bg-black bg-white rounded-2xl left-[1px] top-[1px] ">
+                          <h1 className="font-semibold ">React Taliwind</h1>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-x-2  ">
+                        <a
+                          href="#"
+                          className="rounded-md w-fit bg-light-blue-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-light-blue-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-light-blue-700"
+                        >
+                          Get started
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="mr-auto w-72  flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-20">
                     <div className="relative">
                       <img
-                        src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                        src="./3.png"
                         alt=""
-                        className="aspect-[3/4] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                        className="aspect-[3/2] w-full object-left rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                      />
+                      <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
+                    </div>
+                    <div className="relative">
+                      <img
+                        src="./4.png"
+                        alt=""
+                        className="aspect-[3/2] w-full object-center rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                      />
+                      <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
+                    </div>
+                    <div className="relative">
+                      <img
+                        src="./1.png"
+                        alt=""
+                        className="aspect-[3/2] object-left w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                     </div>
                   </div>
-                  <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
+                  <div className=" w-[24rem]  flex-none space-y-8 pt-32 sm:pt-0">
                     <div className="relative">
                       <img
-                        src="https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                        src="./2.png"
                         alt=""
-                        className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                        className="aspect-[4/3] w-full rounded-xl bg-gray-900/5 object-center object-contain shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                     </div>
                     <div className="relative">
                       <img
-                        src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-x=.4&w=396&h=528&q=80"
+                        src="./5.png"
                         alt=""
-                        className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
-                      />
-                      <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
-                    </div>
-                  </div>
-                  <div className=" w-72 flex-none space-y-8 pt-32 sm:pt-0">
-                    <div className="relative">
-                      <img
-                        src="https://images.unsplash.com/photo-1670272504528-790c24957dda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=left&w=400&h=528&q=80"
-                        alt=""
-                        className="aspect-[3/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
-                      />
-                      <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
-                    </div>
-                    <div className="relative">
-                      <img
-                        src="https://images.unsplash.com/photo-1670272505284-8faba1c31f7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
-                        alt=""
-                        className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                        className="aspect-[3/2] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                     </div>

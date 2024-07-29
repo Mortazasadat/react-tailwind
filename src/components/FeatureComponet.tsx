@@ -18,14 +18,14 @@ const DATA = [
       "Choose the blocks that capture your user's attention and engage them.",
     blocks: [
       {
-        count: 3,
+        count: 4,
         title: "Hero Sections",
         route: "/components/hero-sections",
         img: "/blocks/heroe1s.jpg",
-        isNew: true,
+        isNew: false,
       },
       {
-        count: 2,
+        count: 3,
         title: "Feature Sections",
         route: "/components/feature-sections",
         img: "/blocks/feature.jpg",
@@ -41,9 +41,51 @@ const DATA = [
       {
         count: 2,
         title: "Pricing Sections",
-        route: "/blocks/pricing-sections",
+        route: "/components/pricing-sections",
         img: "/blocks/pricing.jpg",
         isNew: false,
+      },
+      {
+        count: 1,
+        title: "Header Sections",
+        route: "/components/header-sections",
+        img: "/blocks/heroe1s.jpg",
+        isNew: true,
+      },
+      {
+        count: 1,
+        title: "Newsletter Sections",
+        route: "/components/newsletter-sections",
+        img: "/blocks/pricing.jpg",
+        isNew: true,
+      },
+      {
+        count: 1,
+        title: "Blogs Sections",
+        route: "/components/blog-sections",
+        img: "/blocks/blog1.jpg",
+        isNew: true,
+      },
+      {
+        count: 1,
+        title: "Testimonial Sections",
+        route: "/components/testimonial-sections",
+        img: "/blocks/heroe1s.jpg",
+        isNew: true,
+      },
+      {
+        count: 1,
+        title: "Border Sections",
+        route: "/components/border-sections",
+        img: "/blocks/feature.jpg",
+        isNew: true,
+      },
+      {
+        count: 1,
+        title: "Team Sections",
+        route: "/components/team-sections",
+        img: "/blocks/blog1.jpg",
+        isNew: true,
       },
     ],
   },
@@ -209,11 +251,7 @@ const HomeFeatureComponent = () => {
           className="relative dark:hidden left-[calc(50%-11rem)] aspect-[1155/778] w-[36.125rem] -translate-x-1/2 rotate-[-25deg] bg-gradient-to-tr from-blue-500 to-blue-100 opacity-10 sm:left-[58%] sm:w-[100.1875rem]"
         />
       </div>
-      {/* <div className="mx-auto  max-w-3xl  sm:text-center">
-        <p className="mt-2 dark:text-white text-3xl font-semibold tracking-tight text-black sm:text-5xl">
-          React Tailwind components
-        </p>
-      </div> */}
+
       <div className="image-navigation max-w-7xl mx-auto mb-12  mt-20 flex w-full items-center justify-start text-center">
         <div className=" flex w-full  flex-col gap-2 md:flex-row">
           {ImageTabs.map((tab, index) => (
@@ -251,7 +289,7 @@ const HomeFeatureComponent = () => {
           <div key={index} className="  ">
             {activeImage === data.Number && (
               <div
-                className={`grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4`}
+                className={`grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-7`}
               >
                 {data.blocks.map((block, i) => (
                   <Link
