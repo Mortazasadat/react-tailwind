@@ -16,7 +16,7 @@ export default function Account() {
       <PreviewPanel
         frame={1}
         height="h-[65vh]"
-        src="/components/react/hero-sections/hero-splite-with-image"
+        src="/components/react/hero-sections/hero-with-split-image"
         title="Hero - Split With Image Block"
         description="The example below showcases an hero section "
         isNew
