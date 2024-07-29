@@ -258,7 +258,7 @@ export function PreviewPanel({
                 </Button>
               </MenuHandler>
               <MenuList className="flex min-w-[106px] flex-col gap-1 rounded-lg p-1.5">
-                <MenuItem
+                {/* <MenuItem
                   onClick={async () => {
                     if (version !== "html") {
                       const path = src
@@ -272,7 +272,7 @@ export function PreviewPanel({
                   }}
                 >
                   HTML
-                </MenuItem>
+                </MenuItem> */}
                 {/* <MenuItem
                   onClick={async () => {
                     if (version !== "react") {
