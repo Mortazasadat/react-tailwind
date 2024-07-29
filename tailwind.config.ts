@@ -10,9 +10,6 @@ module.exports = withMT({
 
   theme: {
     extend: {
-      animation: {
-        buttonheartbeat: "buttonheartbeat 2s infinite ease-in-out",
-      },
       keyframes: {
         buttonheartbeat: {
           "0%": {
@@ -28,6 +25,7 @@ module.exports = withMT({
             transform: "scale(1)",
           },
         },
+
         "shine-pulse": {
           "0%": {
             "background-position": "0% 0%",
@@ -39,6 +37,16 @@ module.exports = withMT({
             "background-position": "0% 0%",
           },
         },
+        "border-spin": {
+          "100%": {
+            transform: "rotate(-360deg)",
+          },
+        },
+      },
+
+      animation: {
+        buttonheartbeat: "buttonheartbeat 2s infinite ease-in-out",
+        "border-spin": "border-spin 9s linear infinite",
       },
     },
   },

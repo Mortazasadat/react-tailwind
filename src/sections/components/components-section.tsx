@@ -124,12 +124,27 @@ const DATA = [
         img: "/blocks/blog1.jpg",
         isNew: true,
       },
-      // {
-      //   count: 17,
-      //   title: "Testimonial Sections",
-      //   route: "/blocks/testimonial-sections",
-      //   img: "https://material-taillwind-pro-ct-tailwind-team.vercel.app/image/components/testimonial-thumbnail.jpg",
-      // },
+      {
+        count: 1,
+        title: "Testimonial Sections",
+        route: "/components/testimonial-sections",
+        img: "/blocks/heroe1s.jpg",
+        isNew: true,
+      },
+      {
+        count: 1,
+        title: "Border Sections",
+        route: "/components/border-sections",
+        img: "/blocks/feature.jpg",
+        isNew: true,
+      },
+      {
+        count: 1,
+        title: "Team Sections",
+        route: "/components/team-sections",
+        img: "/blocks/blog1.jpg",
+        isNew: true,
+      },
       // {
       //   count: 6,
       //   title: "Popup Sections",

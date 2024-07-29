@@ -3,6 +3,7 @@ import {
   NewspaperIcon,
   PhoneIcon,
 } from "@heroicons/react/20/solid";
+
 const cards = [
   {
     name: "Sales",
