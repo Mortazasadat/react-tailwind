@@ -114,7 +114,7 @@ const DATA = [
         count: 1,
         title: "Newsletter Sections",
         route: "/components/newsletter-sections",
-        img: "/components/pricing.jpg",
+        img: "/blocks/pricing.jpg",
         isNew: true,
       },
       {
