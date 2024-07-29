@@ -1,4 +1,4 @@
-export default function HeroWithAngledImageOnBlock() {
+export default function HeroWithAngledImageBlock() {
   return (
     <div className="bg-white ">
       <div className="relative">

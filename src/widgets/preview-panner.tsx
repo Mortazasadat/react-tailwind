@@ -173,7 +173,7 @@ export function PreviewPanel({
       </div>
       <Card className="border-2 shadow-none rounded-xl border-blue-gray-100">
         <div className="relative grid p-4 bg-transparent border-b rounded-t-xl border-blue-gray-50">
-          <div className="absolute hidden  md:flex left-4 top-3">
+          <div className="absolute flex left-4 top-3">
             <Tooltip content="Desktop View">
               <IconButton variant="text" onClick={() => setDevice("desktop")}>
                 <FaDesktop strokeWidth={1.5} className="w-6 h-6" />
