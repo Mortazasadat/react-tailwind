@@ -36,11 +36,11 @@ import Editor from "react-simple-code-editor";
 import { highlight, languages } from "prismjs/components/prism-core";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
+import { BsYoutube } from "react-icons/bs";
 import "prismjs/components/prism-clike";
 import "prismjs/components/prism-javascript";
 import "prismjs/components/prism-typescript";
 import "prismjs/components/prism-markup";
-import { BsYoutube } from "react-icons/bs";
 require("prismjs/components/prism-jsx");
 require("prismjs/components/prism-tsx");
 
