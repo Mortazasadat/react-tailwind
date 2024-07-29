@@ -76,7 +76,7 @@ const DATA = [
       "Choose the blocks that capture your user's attention and engage them.",
     blocks: [
       {
-        count: 3,
+        count: 4,
         title: "Hero Sections",
         route: "/components/hero-sections",
         img: "/blocks/heroe1s.jpg",
