@@ -14,7 +14,7 @@ export default function Account() {
         isNew
       />
       <PreviewPanel
-        frame={1}
+        frame={2}
         height="h-[65vh]"
         src="/components/react/hero-sections/hero-with-split-image"
         title="Hero - Split With Image Block"
@@ -22,15 +22,15 @@ export default function Account() {
         isNew
       />
       <PreviewPanel
-        frame={1}
+        frame={3}
         height="h-[65vh]"
-        src="/components/react/hero-sections/hero-with-angled-image-block"
-        title="Hero - With Angled Image Block"
+        src="/components/react/hero-sections/hero-with-angled-image"
+        title="Hero - With Angled Image "
         description="The example below showcases an hero section "
         isNew
       />
       <PreviewPanel
-        frame={1}
+        frame={4}
         height="h-[65vh]"
         src="/components/react/hero-sections/hero-with-multi-image"
         title="Hero - Hero With Multi Images"
