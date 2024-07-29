@@ -7,7 +7,7 @@ import { CiBadgeDollar } from "react-icons/ci";
 import { FaBookOpen } from "react-icons/fa";
 import { MdOutlineRssFeed } from "react-icons/md";
 import ShineBorder from "./ShineBorder";
-import { Chip } from "@material-tailwind/react";
+import { Button, Chip } from "@material-tailwind/react";
 
 const DATA = [
   {
@@ -90,38 +90,16 @@ const DATA = [
     ],
   },
   {
-    title: "Content UI",
-    id: "content-ui",
+    title: "Templates",
+    id: "templates",
     Number: 2,
-    description:
-      "Convey information, instructions, or descriptions with our versatile blocks.",
+    description: "Templates made with next.js tailwindcss and framer motion",
     blocks: [
       {
-        count: 6,
-        title: "FAQs",
-        route: "/blocks/faqs",
-        img: "/blocks/cta-sections.jpg",
-        isNew: false,
-      },
-      {
-        count: 15,
-        title: "Feature Section",
-        route: "/blocks/feature-sections",
-        img: "/blocks/cta-sections.jpg",
-        isNew: false,
-      },
-      {
-        count: 7,
-        title: "Stats Sections",
-        route: "/blocks/stats-sections",
-        img: "/blocks/cta-sections.jpg",
-        isNew: false,
-      },
-      {
-        count: 7,
-        title: "Stats Sections",
-        route: "/blocks/stats-sections",
-        img: "/blocks/cta-sections.jpg",
+        count: 1,
+        title: "Hero Section",
+        route: "/components/hero-sections",
+        img: "/blocks/heroe1s.jpg",
         isNew: false,
       },
     ],
@@ -342,6 +320,15 @@ const HomeFeatureComponent = () => {
             )}
           </div>
         ))}
+        <div className="flex mt-14 w-full justify-center">
+          {activeImage === 1 && (
+            <Link href="/components">
+              <Button className="bg-light-blue-500 hover:bg-light-blue-400 transition-all duration-200">
+                Show more
+              </Button>
+            </Link>
+          )}
+        </div>
       </div>
     </div>
   );
