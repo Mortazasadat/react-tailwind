@@ -18,7 +18,7 @@ export default function Account() {
         videoLink="https://youtube.com/@reactailwind"
       />
       <PreviewPanel
-        frame={1}
+        frame={2}
         height="h-[65vh]"
         src="/components/react/feature-sections/feature-with-gradient"
         title="Feature - Feature With Gradient"
@@ -26,7 +26,7 @@ export default function Account() {
         isNew
       />
       <PreviewPanel
-        frame={1}
+        frame={3}
         height="h-[65vh]"
         src="/components/react/feature-sections/feature-with-product-image"
         title="Feature -Feature With Product Image"

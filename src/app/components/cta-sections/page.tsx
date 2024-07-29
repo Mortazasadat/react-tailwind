@@ -14,7 +14,7 @@ export default function Account() {
         isNew
       />
       <PreviewPanel
-        frame={1}
+        frame={2}
         height="h-[65vh]"
         src="/components/react/cta-sections/cta-with-bg-simple"
         title="CTA - CTA With Simple Background"
