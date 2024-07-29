@@ -120,7 +120,7 @@ const DATA = [
       {
         count: 1,
         title: "Blogs Sections",
-        route: "/blocks/blog-sections",
+        route: "/components/blog-sections",
         img: "/blocks/blog1.jpg",
         isNew: true,
       },
