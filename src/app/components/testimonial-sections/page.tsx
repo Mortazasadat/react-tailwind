@@ -12,8 +12,6 @@ export default function Account() {
         title="Testimonial -Simple testimonial"
         description="The example below showcases a testimonial section "
         isNew
-        video
-        videoLink="https://youtu.be/byWv1lv52Lk?si=oRc1-_nY9du_0SzI"
       />
     </div>
   );

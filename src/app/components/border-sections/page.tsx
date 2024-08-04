@@ -12,8 +12,6 @@ export default function Account() {
         title="Border - Border beam"
         description="The example below showcases a border section "
         isNew
-        video
-        videoLink="https://youtu.be/hTrH4M_vVHs?si=wIDIoYpVhBkRoVbS"
       />
     </div>
   );

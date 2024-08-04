@@ -73,15 +73,6 @@ export default function MianHeader() {
           />
         </div>
         <div className="mx-auto max-w-2xl  py-32 md:py-36 lg:py-36 ">
-          <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <Link
-              href="#"
-              className="relative  animate-buttonheartbeat rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 dark:text-white ring-gray-900/10 hover:ring-gray-900/20"
-            >
-              <span className="absolute  inset-0" />
-              Introducing React Tailwind
-            </Link>
-          </div>
           <div className="flex flex-col mb-10 items-center">
             <Image
               width={80}

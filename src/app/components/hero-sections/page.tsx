@@ -36,8 +36,6 @@ export default function Account() {
         title="Hero - Hero With Multi Images"
         description="The example below showcases an hero section "
         isNew
-        video
-        videoLink="https://youtu.be/K7ad5KZ0QJ8"
       />
     </div>
   );

@@ -8,9 +8,9 @@ export default function Account() {
       <PreviewPanel
         frame={1}
         height="h-[65vh]"
-        src="/components/react/team-sections/team-with-rounded-images"
-        title="Team - Team with rounded images"
-        description="The example below showcases a team section "
+        src="/components/react/button-sections/buttonheartbeat"
+        title="Button - Button With Animation"
+        description="The example below showcases a button section "
         isNew
       />
     </div>

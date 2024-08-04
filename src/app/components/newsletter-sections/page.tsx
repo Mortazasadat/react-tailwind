@@ -12,8 +12,6 @@ export default function Account() {
         title="Newsletter - Newsletter with details"
         description="The example below showcases a newsletter section "
         isNew
-        video
-        videoLink="https://youtu.be/qPpXEEjJKhk?si=VDZbfrKhekDqpb6a"
       />
     </div>
   );

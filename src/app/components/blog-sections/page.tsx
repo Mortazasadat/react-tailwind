@@ -12,8 +12,6 @@ export default function Account() {
         title="Blogs - Blog With Images"
         description="The example below showcases a blog section "
         isNew
-        video
-        videoLink="https://youtu.be/V2aiZzQoVEM?si=aSdbOTNmSHDgAPsL"
       />
     </div>
   );

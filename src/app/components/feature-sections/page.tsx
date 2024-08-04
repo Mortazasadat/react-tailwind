@@ -14,8 +14,6 @@ export default function Account() {
         title="Feature - Feature With Large Image"
         description="The example below showcases a feature section "
         isNew
-        video
-        videoLink="https://youtube.com/@reactailwind"
       />
       <PreviewPanel
         frame={2}
@@ -24,8 +22,6 @@ export default function Account() {
         title="Feature - Feature With Gradient"
         description="The example below showcases a feature section "
         isNew
-        video
-        videoLink="https://youtu.be/8Sh604oOKLU?si=QCTCesLfb-dV4UIh"
       />
       <PreviewPanel
         frame={3}

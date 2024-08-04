@@ -68,8 +68,6 @@ interface PropsType {
   description: React.ReactNode;
   height?: string;
   isNew?: boolean;
-  video?: boolean;
-  videoLink?: string;
 }
 
 export function PreviewPanel({
@@ -79,8 +77,6 @@ export function PreviewPanel({
   src,
   height,
   isNew,
-  video,
-  videoLink,
 }: PropsType) {
   const [device, setDevice] = React.useState("desktop");
   const [version, setVersion] = React.useState("react-ts");
@@ -223,25 +219,6 @@ export function PreviewPanel({
             </CopyToClipboard>
           </div>
           <div className="flex items-center gap-2 ml-auto">
-            {/* if user has order */}
-            <Tooltip
-              content={video ? "Check How We Build this" : "Learn on Youtbe"}
-            >
-              <Link
-                href={`${
-                  video ? videoLink : "https://youtube.com/@reactailwind"
-                }`}
-                target="_blank"
-              >
-                <IconButton variant="text">
-                  <BsYoutube
-                    strokeWidth={1.5}
-                    className="w-6 text-red-500 h-6"
-                  />
-                </IconButton>
-              </Link>
-            </Tooltip>
-
             <Menu open={isMenuOpen} handler={setIsMenuOpen}>
               <MenuHandler>
                 <Button

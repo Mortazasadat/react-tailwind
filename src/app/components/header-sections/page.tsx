@@ -12,8 +12,6 @@ export default function Account() {
         title="Header - Header With Card"
         description="The example below showcases an header section "
         isNew
-        video
-        videoLink="https://youtu.be/35EpiIThSOQ?si=hHYKdEmUWMpmts1Z"
       />
     </div>
   );
