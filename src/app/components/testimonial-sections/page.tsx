@@ -11,7 +11,6 @@ export default function Account() {
         src="/components/react/testimonial-sections/simple-testimonial"
         title="Testimonial -Simple testimonial"
         description="The example below showcases a testimonial section "
-        isNew
       />
     </div>
   );

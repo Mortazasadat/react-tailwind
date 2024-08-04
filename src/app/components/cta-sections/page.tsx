@@ -11,7 +11,6 @@ export default function Account() {
         src="/components/react/cta-sections/cta-with-image-block"
         title="CTA - CTA With Image Block"
         description="The example below showcases a cta section "
-        isNew
       />
       <PreviewPanel
         frame={2}
@@ -19,7 +18,6 @@ export default function Account() {
         src="/components/react/cta-sections/cta-with-bg-simple"
         title="CTA - CTA With Simple Background"
         description="The example below showcases a cta section "
-        isNew
       />
     </div>
   );

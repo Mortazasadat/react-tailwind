@@ -11,7 +11,6 @@ export default function Account() {
         src="/components/react/pricing-sections/pricing-three-tiers"
         title="Pricing - Pricing Three Tiers"
         description="The example below showcases an pricing section "
-        isNew
       />
       <PreviewPanel
         frame={2}
@@ -19,7 +18,6 @@ export default function Account() {
         src="/components/react/pricing-sections/simple-pricing"
         title="Pricing - Simple Pricing Block"
         description="The example below showcases an pricing section "
-        isNew
       />
     </div>
   );

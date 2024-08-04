@@ -58,7 +58,7 @@ export default function MianHeader() {
             style={{
               clipPath: " polygon(0 25%, 22% 10%, 100% 84%, 96% 100%)",
             }}
-            className="relative dark:hidden left-[calc(50%-11rem)] aspect-[1155/778] w-[36.125rem] -translate-x-1/2 rotate-[15deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-10 sm:left-[calc(50%-25rem)] sm:w-[80.1875rem]"
+            className="relative dark:hidden left-[calc(50%-11rem)] aspect-[1155/778] w-[36.125rem] -translate-x-1/2 rotate-[15deg] bg-gradient-to-tr from-light-blue-600 to-blue-500 opacity-10 sm:left-[calc(50%-25rem)] sm:w-[80.1875rem]"
           />
         </div>
         <div
@@ -72,7 +72,7 @@ export default function MianHeader() {
             className="relative dark:hidden left-[calc(50%-11rem)] aspect-[1155/778] w-[36.125rem] -translate-x-1/2 rotate-[24deg]  bg-gradient-to-tr from-light-blue-200 to-light-blue-200 opacity-20 sm:left-[calc(50%-25rem)] sm:w-[80.1875rem]"
           />
         </div>
-        <div className="mx-auto max-w-2xl  py-32 md:py-36 lg:py-36 ">
+        <div className="mx-auto max-w-2xl  py-32 md:py-36 lg:py-56 ">
           <div className="flex flex-col mb-10 items-center">
             <Image
               width={80}

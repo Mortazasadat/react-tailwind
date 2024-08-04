@@ -11,7 +11,6 @@ export default function Account() {
         src="/components/react/header-sections/header-with-card"
         title="Header - Header With Card"
         description="The example below showcases an header section "
-        isNew
       />
     </div>
   );

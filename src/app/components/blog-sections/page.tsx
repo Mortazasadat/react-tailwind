@@ -11,7 +11,6 @@ export default function Account() {
         src="/components/react/blog-sections/blog-with-images"
         title="Blogs - Blog With Images"
         description="The example below showcases a blog section "
-        isNew
       />
     </div>
   );

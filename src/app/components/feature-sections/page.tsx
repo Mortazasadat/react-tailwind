@@ -13,7 +13,6 @@ export default function Account() {
         src="/components/react/feature-sections/feature-with-large-image"
         title="Feature - Feature With Large Image"
         description="The example below showcases a feature section "
-        isNew
       />
       <PreviewPanel
         frame={2}
@@ -21,7 +20,6 @@ export default function Account() {
         src="/components/react/feature-sections/feature-with-gradient"
         title="Feature - Feature With Gradient"
         description="The example below showcases a feature section "
-        isNew
       />
       <PreviewPanel
         frame={3}
@@ -29,7 +27,6 @@ export default function Account() {
         src="/components/react/feature-sections/feature-with-product-image"
         title="Feature -Feature With Product Image"
         description="The example below showcases a feature section "
-        isNew
       />
     </div>
   );

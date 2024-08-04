@@ -35,15 +35,15 @@ export default function Footer() {
               target="_blank"
               key={item.name}
               href={item.href}
-              className="text-gray-400 dark:text-gray-200 dark:hover:text-gray-300  hover:text-gray-500"
+              className="text-gray-600 dark:text-gray-200 dark:hover:text-gray-300  hover:text-gray-700"
             >
               <item.icon className="h-5 w-5" aria-hidden="true" />
             </Link>
           ))}
         </div>
         <div className="mt-8 md:order-1 md:mt-0">
-          <p className="text-center text-xs leading-5 dark:text-gray-200 text-gray-500">
-            Brought to you by{" "}
+          <p className="text-center text-xs leading-5 dark:text-gray-300 text-gray-700">
+            Build by{" "}
             <Link
               className="font-semibold hover:text-gray-600 dark:hover:text-gray-300"
               href="https://www.sayedmurtaza.com/"

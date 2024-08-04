@@ -11,7 +11,6 @@ export default function Account() {
         src="/components/react/border-sections/border-beam"
         title="Border - Border beam"
         description="The example below showcases a border section "
-        isNew
       />
     </div>
   );

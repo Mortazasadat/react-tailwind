@@ -11,7 +11,6 @@ export default function Account() {
         src="/components/react/team-sections/team-with-rounded-images"
         title="Team - Team with rounded images"
         description="The example below showcases a team section "
-        isNew
       />
     </div>
   );

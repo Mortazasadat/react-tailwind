@@ -11,7 +11,6 @@ export default function Account() {
         src="/components/react/newsletter-sections/newsletter-with-details"
         title="Newsletter - Newsletter with details"
         description="The example below showcases a newsletter section "
-        isNew
       />
     </div>
   );

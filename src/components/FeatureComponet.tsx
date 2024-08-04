@@ -280,7 +280,7 @@ const HomeFeatureComponent = () => {
                   <Link
                     key={i}
                     href={block.route}
-                    className="relative ring-1  rounded-2xl ring-inset ring-[#30baf7] hover:ring-2 transition-all duration-300"
+                    className="relative ring-1  rounded-2xl ring-inset ring-[#30baf7]   "
                   >
                     <span className="inset-0 absolute" />
                     <div className="p-5">

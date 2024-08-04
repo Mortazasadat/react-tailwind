@@ -11,7 +11,6 @@ export default function Account() {
         src="/components/react/hero-sections/hero-simple-centered"
         title="Hero - Simple Center Block"
         description="The example below showcases an hero section "
-        isNew
       />
       <PreviewPanel
         frame={2}
@@ -19,7 +18,6 @@ export default function Account() {
         src="/components/react/hero-sections/hero-with-split-image"
         title="Hero - Split With Image Block"
         description="The example below showcases an hero section "
-        isNew
       />
       <PreviewPanel
         frame={3}
@@ -27,7 +25,6 @@ export default function Account() {
         src="/components/react/hero-sections/hero-with-angled-image"
         title="Hero - With Angled Image "
         description="The example below showcases an hero section "
-        isNew
       />
       <PreviewPanel
         frame={4}
