@@ -2,12 +2,37 @@
 import { CheckIcon } from "@heroicons/react/16/solid";
 import { useState } from "react";
 
-const frequencies = [
+// Define the types
+type Frequency = {
+  value: "monthly" | "annually";
+  label: string;
+  priceSuffix: string;
+};
+
+type PricingOption = {
+  monthly: string;
+  annually: string;
+};
+
+type Plan = {
+  name: string;
+  id: string;
+  href: string;
+  price: PricingOption | string;
+  description: string;
+  features: string[];
+  featured: boolean;
+  cta: string;
+};
+
+// Frequency options
+const frequencies: Frequency[] = [
   { value: "monthly", label: "Monthly", priceSuffix: "/month" },
   { value: "annually", label: "Annually", priceSuffix: "/year" },
 ];
 
-const data = [
+// Plan data
+const data: Plan[] = [
   {
     name: "Freelancer",
     id: "tier-freelancer",
@@ -61,19 +86,20 @@ const data = [
   },
 ];
 
+// Helper function to combine class names
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(" ");
 }
 
 export default function Page() {
-  const [frequency, setFrequency] = useState(frequencies[0]);
+  const [frequency, setFrequency] = useState<Frequency>(frequencies[0]);
 
   return (
     <div className="py-24 bg-white lg:py-32">
       <div className="px-6 mx-auto max-w-7xl lg:px-8">
         <div className="flex justify-center my-10">
           <div className="grid grid-cols-2 p-1 font-semibold leading-5 text-center rounded-lg gap-x-1 ring-1 ring-inset ring-gray-200">
-            {frequencies.map((option: any) => (
+            {frequencies.map((option) => (
               <div
                 key={option.value}
                 className={`cursor-pointer text-sm transition-all duration-500 rounded-md px-2.5 py-1 ${
@@ -89,84 +115,94 @@ export default function Page() {
           </div>
         </div>
         <div className="mt-10 mx-auto max-w-md lg:mx-0 gap-8 lg:max-w-none grid grid-cols-1 lg:grid-cols-3">
-          {data.map((option) => (
-            <div
-              key={option.id}
-              className={classNames(
-                option.featured ? "bg-gray-900 ring-gray-900" : "ring-gray-200",
-                "rounded-3xl p-8 ring-1 xl:p-10"
-              )}
-            >
-              <h3
-                id={option.id}
-                className={classNames(
-                  option.featured ? "text-white" : "text-gray-600",
-                  " text-lg leading-8 font-semibold"
-                )}
-              >
-                {option.name}
-              </h3>
-              <p
-                className={classNames(
-                  option.featured ? "text-gray-300" : "text-gray-600",
-                  "mt-4 text-sm leading-6"
-                )}
-              >
-                {option.description}
-              </p>
-              <p className="mt-6 flex items-baseline gap-x-1">
-                <span
-                  className={classNames(
-                    option.featured ? "text-white" : "text-gray-900",
-                    "text-4xl font-bold tracking-tight"
-                  )}
-                >
-                  {typeof option.price === "string"
-                    ? option.price
-                    : option.price[frequency.value]}
-                </span>
-                {typeof option.price !== "string" ? (
-                  <span
-                    className={classNames(
-                      option.featured ? "text-gray-300" : "text-gray-600",
-                      "text-sm font-semibold leading-6"
-                    )}
-                  >
-                    {frequency.priceSuffix}
-                  </span>
-                ) : null}
-              </p>
-              <a
-                href="#"
+          {data.map((option) => {
+            // Handle both string and object price types
+            const price =
+              typeof option.price === "string"
+                ? option.price
+                : option.price[frequency.value];
+
+            return (
+              <div
+                key={option.id}
                 className={classNames(
                   option.featured
-                    ? "bg-white/10 text-white hover:bg-white/20 focus-visible:outline-white"
-                    : "bg-light-blue-600 text-white shadow-sm hover:bg-light-blue-500",
-                  "mt-6 block rounded-md py-2 cursor-pointer px-3 text-center text-sm font-semibold leading-6"
+                    ? "bg-gray-900 ring-gray-900"
+                    : "ring-gray-200",
+                  "rounded-3xl p-8 ring-1 xl:p-10"
                 )}
               >
-                {option.cta}
-              </a>
-              <ul
-                className={classNames(
-                  option.featured ? "text-gray-300" : "text-gray-600",
-                  "mt-8 space-y-3 text-sm leading-6 xl:mt-10"
-                )}
-              >
-                {option.features.map((feature) => (
-                  <li className="flex items-center gap-x-3">
-                    <CheckIcon
+                <h3
+                  id={option.id}
+                  className={classNames(
+                    option.featured ? "text-white" : "text-gray-600",
+                    " text-lg leading-8 font-semibold"
+                  )}
+                >
+                  {option.name}
+                </h3>
+                <p
+                  className={classNames(
+                    option.featured ? "text-gray-300" : "text-gray-600",
+                    "mt-4 text-sm leading-6"
+                  )}
+                >
+                  {option.description}
+                </p>
+                <p className="mt-6 flex items-baseline gap-x-1">
+                  <span
+                    className={classNames(
+                      option.featured ? "text-white" : "text-gray-900",
+                      "text-4xl font-bold tracking-tight"
+                    )}
+                  >
+                    {price}
+                  </span>
+                  {typeof option.price !== "string" ? (
+                    <span
                       className={classNames(
-                        option.featured ? "text-white" : "text-light-blue-600",
-                        "h-5 w-5 flex-none"
+                        option.featured ? "text-gray-300" : "text-gray-600",
+                        "text-sm font-semibold leading-6"
                       )}
-                    />
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+                    >
+                      {frequency.priceSuffix}
+                    </span>
+                  ) : null}
+                </p>
+                <a
+                  href={option.href}
+                  className={classNames(
+                    option.featured
+                      ? "bg-white/10 text-white hover:bg-white/20 focus-visible:outline-white"
+                      : "bg-light-blue-600 text-white shadow-sm hover:bg-light-blue-500",
+                    "mt-6 block rounded-md py-2 cursor-pointer px-3 text-center text-sm font-semibold leading-6"
+                  )}
+                >
+                  {option.cta}
+                </a>
+                <ul
+                  className={classNames(
+                    option.featured ? "text-gray-300" : "text-gray-600",
+                    "mt-8 space-y-3 text-sm leading-6 xl:mt-10"
+                  )}
+                >
+                  {option.features.map((feature, index) => (
+                    <li key={index} className="flex items-center gap-x-3">
+                      <CheckIcon
+                        className={classNames(
+                          option.featured
+                            ? "text-white"
+                            : "text-light-blue-600",
+                          "h-5 w-5 flex-none"
+                        )}
+                      />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
