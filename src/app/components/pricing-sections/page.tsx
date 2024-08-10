@@ -19,6 +19,13 @@ export default function Account() {
         title="Pricing - Simple Pricing Block"
         description="The example below showcases an pricing section "
       />
+      <PreviewPanel
+        frame={3}
+        height="h-[65vh]"
+        src="/components/react/pricing-sections/Pricing-with-featured"
+        title="Pricing - Pricing With Featured"
+        description="The example below showcases an pricing section "
+      />
     </div>
   );
 }

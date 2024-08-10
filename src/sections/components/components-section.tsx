@@ -97,7 +97,7 @@ const DATA = [
         isNew: false,
       },
       {
-        count: 2,
+        count: 3,
         title: "Pricing Sections",
         route: "/components/pricing-sections",
         img: "/blocks/pricing.jpg",
